@@ -45,3 +45,19 @@ from toplama import topla
 
 sonuc2 = topla(sayi1, sayi2)
 print sonuc2
+
+
+"""
+simdi, islem.py icinden nesne kullanacagiz.
+"""
+
+print "Asagisi islem.py icindeki Islem nesnesini kullanarak hesap yapacak"
+
+from islem import Islem
+
+h = Islem(sayi1, sayi2)
+
+print "toplama %0.2f" % h.topla()
+print "cikarma %0.2f" % h.cikar()
+print "carpma  %0.2f" % h.carp()
+print "bolme   %0.2f" % h.bol()
