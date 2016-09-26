@@ -1,0 +1,7 @@
+#Sira No,ogrno,Adi soyadi,Sinifi, Okulu
+1,1211,ilker manap,1E,Mevlana Ilkokulu
+2,576,Ahmet Tas,10A,Mustafa Kemal Lisesi
+3,9856,Mehmet Tas,3D,Mustafa Kemal Lisesi
+4,6533,Elif Mert,10A,Halide Edip Lisesi
+5,4532,Ayse test,11A,Halide Edip Lisesi
+6,1212,Mehmet Ahmet,1E,Mevlana Ilkokulu
