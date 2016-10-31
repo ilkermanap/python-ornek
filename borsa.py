@@ -60,13 +60,14 @@ class LokalSayfa(Sayfa):
 
 class UzakSayfa(Sayfa):
     def __init__(self, url):
+        self.url = url
         r = requests.get(url)
         icerik = r.text
         Sayfa.__init__(self, icerik)
         self.tarih = time.localtime()
 
     def guncelle(self):
-        r = requests.get(url)
+        r = requests.get(self.url)
         icerik = r.text
         Sayfa.__init__(self, icerik)
         self.tarih = time.localtime()        
