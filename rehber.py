@@ -12,13 +12,13 @@ class Kisi:
 
 
     def rapor(self):
-        print "Adi    :", self.adi
-        print "Soyadi :", self.soyadi
-        print "TC No  :", self.tcno
-        print "Sehir  :", self.sehir
-        print "Meslek :", self.meslek
-        print "Telefon:", self.tel
-        print "Adres  :", self.adres
+        print("Adi    :", self.adi)
+        print("Soyadi :", self.soyadi)
+        print("TC No  :", self.tcno)
+        print("Sehir  :", self.sehir)
+        print("Meslek :", self.meslek)
+        print("Telefon:", self.tel)
+        print("Adres  :", self.adres)
 
     def csv(self, ayirac = ";"):
         a = ayirac
@@ -41,17 +41,17 @@ class Rehber:
 
 
     def rapor(self):
-        print "-" * 50
-        print self.adi, "  Rehberi"
-        print "-" * 50
+        print("-" * 50)
+        print(self.adi, "  Rehberi")
+        print("-" * 50)
         for tcno, kisi in self.kisiler.items():
             kisi.rapor()
-            print "-" * 50
+            print("-" * 50)
 
     def csv(self):
-        print "adi;soyadi;tcno;sehir;meslek;tel;adres"
+        print("adi;soyadi;tcno;sehir;meslek;tel;adres")
         for tcno, kisi in self.kisiler.items():
-            print kisi.csv()
+            print(kisi.csv())
 
 
 

@@ -7,8 +7,8 @@ class Insan:
         self.dogumyili = dogumyili
 
     def rapor(self):
-        print "adi        :", self.adi
-        print "dogum yili :", self.dogumyili 
+        print("adi        :", self.adi)
+        print("dogum yili :", self.dogumyili)
 
 class Calisan(Insan):
     def __init__(self, ad, cins, dy, maas):
@@ -17,7 +17,7 @@ class Calisan(Insan):
 
     def rapor(self):
         Insan.rapor(self)
-        print "maasi :", self.maas
+        print("maasi :", self.maas)
 
 
 a = Insan("ilker","e",1972)

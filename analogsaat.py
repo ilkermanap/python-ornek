@@ -30,5 +30,5 @@ def analog_saat(r=100):
 
 while 1:
     h, m, s = analog_saat()
-    print h[0], h[1], m[0], m[1], s[0], s[1]
+    print(h[0], h[1], m[0], m[1], s[0], s[1])
     time.sleep(1)

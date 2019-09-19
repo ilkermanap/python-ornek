@@ -35,7 +35,7 @@ class Hisse:
             self.fiyat = rakam
 
     def rapor(self, tarih):
-        print "%s\t%s\t%02.2f\t%02.2f" % (tarih, self.adi, self.alis, self.satis)
+        print( "%s\t%s\t%02.2f\t%02.2f" % (tarih, self.adi, self.alis, self.satis))
 
 class Sayfa:
     def __init__(self, icerik):
@@ -95,8 +95,8 @@ class Borsa:
 
 
     def rapor(self, hisse=None):
-        print "Tarih                     hisse  alis   satis"
-        print "----------------------------------------------"
+        print( "Tarih                     hisse  alis   satis")
+        print( "----------------------------------------------")
         for tr, v in self.veriler.items():
             tstr = time.strftime("%Y-%m-%d %H:%M:%S", tr)
             if hisse is None:
@@ -106,7 +106,7 @@ class Borsa:
                 if hisse in v.keys():
                     v[hisse].rapor(tstr)
                 else:
-                    print hisse, " icin %s tarihinde veri  bulunamadi" % tstr
+                    print( hisse, " icin %s tarihinde veri  bulunamadi" % tstr)
 if __name__ == "__main__":
     s = LokalSayfa("bigpara.html")
     #u = UzakSayfa("http://www.bigpara.com/borsa/canli-borsa/")
