@@ -8,9 +8,9 @@ class Sinif:
             self.ogrenciler[ogrenci.numara] = ogrenci
             
     def rapor(self):
-        print "-" * 50
-        print "%s Sinifi Ogrenci Listesi " % self.adi
+        print( "-" * 50)
+        print( "%s Sinifi Ogrenci Listesi " % self.adi)
         for ogrno, ogr in sorted(self.ogrenciler.items()):
-            print "%7s %s" % (ogrno, ogr.adi)
+            print( "%7s %s" % (ogrno, ogr.adi))
 
             

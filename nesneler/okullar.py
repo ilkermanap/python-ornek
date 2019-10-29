@@ -9,10 +9,9 @@ class Okullar:
         self.okullar = {}
 
     def okul_ekle(self, okul):
-        print okul.adi
         if okul.adi not in self.okullar.keys():
             self.okullar[okul.adi] = okul
-        print self.okullar
+
 
     def sinif_ekle(self, okuladi, sinif):
         self.okul_ekle(Okul(okuladi))
@@ -23,8 +22,8 @@ class Okullar:
         self.okullar[okuladi].siniflar[sinifadi].ogrenci_ekle(ogrenci)
             
     def rapor(self, okuladi=None):
-        print "*" * 50
-        print "  %s Ilcesi Okullar Raporu" % self.ilce
+        print( "*" * 50)
+        print( "  %s Ilcesi Okullar Raporu" % self.ilce)
         if okuladi is None:
             for okulu in self.okullar.values():
                 okulu.rapor()
@@ -33,6 +32,6 @@ class Okullar:
             if okuladi in self.okullar.keys():
                 self.okullar[okuladi].rapor()
             else:
-                print "Hatali okul adi, ekli okullar asagida:"
+                print( "Hatali okul adi, ekli okullar asagida:")
                 for k in self.okullar.keys():
-                    print k
+                    print( k)

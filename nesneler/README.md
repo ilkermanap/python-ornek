@@ -8,3 +8,7 @@ Bu amaçla, uygulamayı oluşturan nesneleri ve uygulamanın kendisini biraz dah
 anlatmaya çalışacağım.
 
 Bu belge eklemelerle genişleyecektir. 
+
+Calistirmak icin
+
+    python3 uygulama.py ogrenciler.txt
