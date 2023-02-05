@@ -41,7 +41,7 @@ class Sayfa:
     def __init__(self, icerik):
         self.icerik = icerik
         self.tarih = None
-        self.soup = bs(self.icerik)
+        self.soup = bs(self.icerik, features="lxml")
         self.li = self.soup.find_all("li")
 
         
